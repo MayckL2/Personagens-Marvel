@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(img/compactado/guardioes.jpg);
+  background-size: cover;
+  background-position: 0px -100px;
+  background-attachment: fixed;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.logo {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 10px red;
+  padding: 0px 10px;
+  font-size: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.logo:hover {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+header {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ed4078;
+  border-bottom: solid;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header a {
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 25px;
+  color: red;
+  margin-top: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header a:hover {
+  background-color: red;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 0px;
+}
+
+header .cont {
+  color: black;
+  border: 1px solid white;
+  padding: 1px 10px;
+  border-radius: 0px 20px 0px 20px;
+}
+
+@-webkit-keyframes animamodal {
+  from {
+    top: 60px;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes animamodal {
+  from {
+    top: 60px;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+.modal {
+  display: none;
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal-content {
+  position: absolute;
+  top: 100px;
+  background-color: red;
+  width: 450px;
+  left: 20vw;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-animation-name: animamodal;
+          animation-name: animamodal;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.modal-content h1 {
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: 5px solid;
+}
+
+.modal-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-content img {
+  width: 70px;
+  margin: 20px;
+}
+
+.modal-content .fecha {
+  text-decoration: none;
+  color: purple;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section {
+  margin-top: 500px;
+  padding: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ed4078), to(black));
+  background-image: linear-gradient(#ed4078, black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+section .pers {
+  padding: 10px 50px;
+  width: 85vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .pers img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section .pers img:hover {
+  border: 5px solid white;
+  cursor: pointer;
+}
+
+section .perfil {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+section .perfil div {
+  width: 90vw;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .perfil div p {
+  width: 50vw;
+  font-size: 25px;
+}
+
+section .perfil div img {
+  width: 40vw;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 20px 0px;
+  }
+  section h1 {
+    font-size: 20px;
+  }
+  .pers {
+    display: none !important;
+  }
+  .perfil {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .perfil div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto !important;
+    padding: 10px 0px !important;
+    border-bottom: solid;
+  }
+  .perfil div p {
+    font-size: 15px !important;
+  }
+  .perfil div img {
+    width: 50vw !important;
+    height: 300px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
